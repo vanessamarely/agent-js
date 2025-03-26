@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agente de Cocina Saludable</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Agente de Cocina Saludable</h1>
+  <form id="preferencias-form">
+    <label>Dieta:</label>
+    <input type="text" id="dieta" required />
+
+    <label>Intolerancias (separadas por coma):</label>
+    <input type="text" id="intolerancias" required />
+
+    <label>Objetivo:</label>
+    <input type="text" id="objetivo" required />
+
+    <button type="submit">Generar plan</button>
+  </form>
+
+  <div id="loading" class="hidden">🍳 Pensando en tu menú saludable...</div>
+  <div id="respuesta"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
